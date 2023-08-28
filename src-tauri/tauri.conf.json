@@ -1,0 +1,73 @@
+{
+  "build": {
+    "beforeBuildCommand": "pnpm build",
+    "beforeDevCommand": "pnpm dev",
+    "devPath": "http://localhost:7437",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "App Desktop",
+    "version": "0.3.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "appimage": {
+        "bundleMediaFramework": true
+      },
+      "copyright": "App Pvt. Ltd.",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.App.desktop",
+      "longDescription": "A cross-platform software for managing apps and deployments from local, server and data centers.",
+      "shortDescription": "Manage apps \u0026 deployments for the machines you own.",
+      "targets": "all"
+    },
+    "security": {
+      "csp": null
+    },
+    "systemTray": {
+      "iconAsTemplate": true,
+      "iconPath": "icons/128x128.png"
+    },
+    "updater": {
+      "active": true,
+      "dialog": true,
+      "endpoints": [
+        "https://releases.App.tech/desktop/{{target}}/{{arch}}/{{current_version}}"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDUzRDI3MzEyNTNGNjFCOTAKUldTUUcvWlRFblBTVTBId1NKR3BNVUY2OFA5Zk0xYXdtM05uZ05BSGx1Y0hTb3Buc1puZXQzOW0K",
+      "windows": {
+        "installMode": "passive"
+      }
+    },
+    "windows": [
+      {
+        "center": true,
+        "decorations": true,
+        "fileDropEnabled": true,
+        "fullscreen": false,
+        "height": 725,
+        "minHeight": 500,
+        "minWidth": 768,
+        "resizable": true,
+        "title": "App Desktop",
+        "transparent": true,
+        "width": 1400
+      }
+    ]
+  }
+}
