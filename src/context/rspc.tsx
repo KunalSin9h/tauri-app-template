@@ -1,3 +1,4 @@
+import { ReactElement, JSXElementConstructor } from "react";
 import { QueryClient } from "@tanstack/react-query";
 import { createClient } from "@rspc/client";
 import { TauriTransport } from "@rspc/tauri";
@@ -12,10 +13,15 @@ const queryClient = new QueryClient();
 
 export const rspc = createReactQueryHooks<Procedures>();
 
-export default function RspcProvider(props) {
+export default function RspcProvider(props: {
+  children:
+    | ReactElement<unknown, string | JSXElementConstructor<unknown>>
+    | undefined;
+}) {
   return (
     <rspc.Provider client={client} queryClient={queryClient}>
       {props.children}
     </rspc.Provider>
   );
 }
+
