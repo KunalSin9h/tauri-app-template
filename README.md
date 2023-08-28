@@ -13,3 +13,6 @@ Features
 9. GitHub Workflow
 10. Tauri vscode debug
 11. [Shadcn UI](https://ui.shadcn.com/)
+
+> [!WARNING]
+> The `./src-tauri/icons` is **empty**, generate the icons from [Tauri Icon Docs](https://tauri.app/v1/guides/features/icons) before build.
