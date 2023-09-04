@@ -5,12 +5,36 @@ import { TauriTransport } from "@rspc/tauri";
 import { createReactQueryHooks } from "@rspc/react";
 import type { Procedures } from "../ts/bindings";
 
-const client = createClient<Procedures>({
+/**
+ * Synchronous RSPC Client
+ * This Will be use like
+ *
+ * # Example
+ *
+ * ```ts
+ * await client.query(["version", "parameters"]);
+ * ```
+ *
+ * To use this import int the file and use in place
+ * which are not react component, like event handlers
+ */
+export const client = createClient<Procedures>({
   transport: new TauriTransport(),
 });
 
 const queryClient = new QueryClient();
 
+/**
+ * Asynchronous RSPC client
+ * This is a react query for calling function,
+ * it must be called inside a React Component.
+ *
+ * # Example
+ *
+ * ```ts
+ * const { data, isLoading, error } = rspc.useQuery(["version", "parameters"]);
+ * ```
+ */
 export const rspc = createReactQueryHooks<Procedures>();
 
 export default function RspcProvider(props: {
