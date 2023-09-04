@@ -3,19 +3,6 @@
 version = 3
 
 [[package]]
-name = "App-desktop"
-version = "0.3.0"
-dependencies = [
- "open 5.0.0",
- "rspc",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "tokio",
-]
-
-[[package]]
 name = "Inflector"
 version = "0.11.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -80,6 +67,19 @@ name = "anyhow"
 version = "1.0.75"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a4668cab20f66d8d020e1fbc0ebe47217433c1b6c8f2040faf858554e394ace6"
+
+[[package]]
+name = "app-desktop"
+version = "0.3.0"
+dependencies = [
+ "open 5.0.0",
+ "rspc",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "tokio",
+]
 
 [[package]]
 name = "atk"

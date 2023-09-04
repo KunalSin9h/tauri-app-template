@@ -31,7 +31,7 @@ authors = ['Kunal Singh <kunal@kunalsin9h.com>']
 description = 'Desktop application for App'
 edition = '2021'
 license = ''
-name = 'App-desktop'
+name = 'app-desktop'
 repository = 'https://github.com/App/desktop'
 version = '0.3.0'
 
