@@ -1,1 +1,0 @@
-To Generate Icons [see this](https://tauri.app/v1/guides/features/icons)

@@ -14,5 +14,31 @@ Features
 10. Tauri vscode debug
 11. [Shadcn UI](https://ui.shadcn.com/)
 
-> [!WARNING]
-> The `./src-tauri/icons` is **empty**, generate the icons from [Tauri Icon Docs](https://tauri.app/v1/guides/features/icons) before build.
+## Local Setup
+
+Clone the repository
+
+```bash
+git clone https://github.com/KunalSin9h/tauri-app-template
+```
+
+Download Dependencies
+
+```bash
+pnpm install # for frontend
+
+cd src-tauri
+cargo fetch # for backend
+
+cd ../ # come back to home repo
+```
+
+Run the development app
+
+```bash
+pnpm tauri dev
+```
+
+Application will be build by GitHub Action
+
+Tauri [Docs](https://tauri.app/v1/guides/)
