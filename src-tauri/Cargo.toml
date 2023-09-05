@@ -33,7 +33,7 @@ edition = '2021'
 license = ''
 name = 'app-desktop'
 repository = 'https://github.com/App/desktop'
-version = '0.3.0'
+version = '0.0.0'
 
 [profile]
 [profile.release]

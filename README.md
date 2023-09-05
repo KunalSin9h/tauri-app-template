@@ -15,6 +15,7 @@ Features
 9. GitHub Workflow
 10. Tauri vscode debug
 11. [Shadcn UI](https://ui.shadcn.com/)
+12. [Million.js](https://million.dev/) (Auto Mode)
 
 ## Local Setup
 

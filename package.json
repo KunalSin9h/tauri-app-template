@@ -12,14 +12,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^1.14.0",
-    "tailwindcss-animate": "^1.0.6"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.4.0",
-    "@types/node": "^20.5.7",
+    "@types/node": "^20.5.9",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@vitejs/plugin-react": "^4.0.4",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.48.0",
@@ -29,8 +29,8 @@
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
     "install": "^0.13.0",
-    "postcss": "^8.4.28",
-    "prettier": "^3.0.2",
+    "postcss": "^8.4.29",
+    "prettier": "^3.0.3",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
@@ -49,5 +49,5 @@
     "preview": "vite preview",
     "tauri": "tauri"
   },
-  "version": "0.3.0"
+  "version": "0.0.0"
 }

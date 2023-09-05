@@ -15,7 +15,6 @@ async fn main() -> tauri::Result<()> {
 
     tauri::Builder::default()
         .plugin(rspc::integrations::tauri::plugin(router.into(), || ()))
-        .invoke_handler(tauri::generate_handler![version])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 
