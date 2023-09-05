@@ -17,6 +17,33 @@ Features
 11. [Shadcn UI](https://ui.shadcn.com/)
 12. [Million.js](https://million.dev/) (Auto Mode)
 
+### Auto Updater Info
+
+Replace the `KunalSin9h` and `tauri-app-template` in the `./src-tauri/tauri.conf.json`'s updater endpoint with you username and repo name to get latest version info rom the github releases.
+
+```json
+"endpoints": [
+    "https://github.com/{username}/{repo}/releases/latest/download/latest.json"
+],
+
+```
+
+In this template **Auto Updater** Is enabled by default. So you need to setup `keys` for auto-updater from the [Tauri Docs](https://tauri.app/v1/guides/distribution/updater).
+
+And Update the public key in `./src-tauri/tauri.conf.json` and put `TAURI_PRIVATE_KEY` and `TAURI_KEY_PASSWORD` in GitHub Secrets.
+
+These will be used in build process, like this.
+
+```yaml
+- uses: tauri-apps/tauri-action@v0
+    env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
+        TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
+```
+
+#### Latest Update URL
+
 ## Local Setup
 
 Clone the repository

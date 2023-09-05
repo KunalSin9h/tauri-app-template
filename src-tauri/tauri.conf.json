@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "App Desktop",
-    "version": "0.0.0"
+    "version": "1.0.0"
   },
   "tauri": {
     "allowlist": {
@@ -32,8 +32,8 @@
         "icons/icon.ico"
       ],
       "identifier": "com.App.desktop",
-      "longDescription": "A cross-platform software for managing apps and deployments from local, server and data centers.",
-      "shortDescription": "Manage apps \u0026 deployments for the machines you own.",
+      "longDescription": "A cross-platform Desktop App.",
+      "shortDescription": "A cross-platform Desktop App.",
       "targets": "all"
     },
     "security": {
@@ -47,7 +47,7 @@
       "active": true,
       "dialog": true,
       "endpoints": [
-        "https://releases.App.tech/desktop/{{target}}/{{arch}}/{{current_version}}"
+        "https://github.com/KunalSin9h/tauri-app-template/releases/latest/download/latest.json"
       ],
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDUzRDI3MzEyNTNGNjFCOTAKUldTUUcvWlRFblBTVTBId1NKR3BNVUY2OFA5Zk0xYXdtM05uZ05BSGx1Y0hTb3Buc1puZXQzOW0K",
       "windows": {
