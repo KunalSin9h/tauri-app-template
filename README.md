@@ -42,7 +42,8 @@ These will be used in build process, like this.
         TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
 ```
 
-#### Latest Update URL
+> [!WARNING]
+> You have to manually trigger `publish` workflow for publishing builds, as the workflow has `workflow_dispatch` trigger.
 
 ## Local Setup
 
