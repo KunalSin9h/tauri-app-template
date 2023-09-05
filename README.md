@@ -1,5 +1,7 @@
 # Tauri App Template
 
+[![publish](https://github.com/KunalSin9h/tauri-app-template/actions/workflows/release.yml/badge.svg)](https://github.com/KunalSin9h/tauri-app-template/actions/workflows/release.yml)
+
 Features
 
 1. Vite + React
