@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+go run ./scripts/app.go version
+
 pnpm format:check
 pnpm lint
