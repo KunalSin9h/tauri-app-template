@@ -73,6 +73,14 @@ Application will be build by GitHub Action
 
 Tauri [Docs](https://tauri.app/v1/guides/)
 
+### Skip Pre-commit
+
+To Skip pre-commit use `--no-verify` flag when doing _git commit_
+
+```bash
+git commit -m "message" --no-verify
+```
+
 ### Go Cli for Scripting, particularly for updating version
 
 ```bash
