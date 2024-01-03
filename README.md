@@ -18,7 +18,7 @@ Features
 
 ### Auto Updater Info
 
-Replace the `KunalSin9h` and `tauri-app-template` in the `./src-tauri/tauri.conf.json`'s updater endpoint with you username and repo name to get latest version info rom the github releases.
+Replace the `{username}` and `{repo}` in the `./src-tauri/tauri.conf.json`'s updater endpoint with you username and repo name to get latest version info rom the github releases.
 
 ```json
 "endpoints": [
