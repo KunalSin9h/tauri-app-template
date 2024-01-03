@@ -72,3 +72,17 @@ pnpm tauri dev
 Application will be build by GitHub Action
 
 Tauri [Docs](https://tauri.app/v1/guides/)
+
+### Go Cli for Scripting, particularly for updating version
+
+```bash
+# check version of app
+go run scripts/app.go version
+```
+
+```bash
+# update app version (it changes 3 files)
+go run scripts/app.go version update 1.2.0
+```
+
+![instructions](https://i.imgur.com/x7eUEEQ.png)

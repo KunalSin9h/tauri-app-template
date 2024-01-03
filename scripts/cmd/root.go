@@ -14,12 +14,12 @@ func init() {
 }
 
 var rootCmd = &cobra.Command{
-	Use:   "meltctl-desktop",
+	Use:   "app-desktop",
 	Short: "Utility scripts for developing App Desktop",
 	Long:  "scripts such as checking version, updating version etc.",
 
 	Run: func(cmd *cobra.Command, args []string) {
-		color.HiCyan("MELTCTL DESKTOP")
+		color.HiCyan("APP DESKTOP")
 	},
 }
 
